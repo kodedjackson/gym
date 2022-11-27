@@ -11,7 +11,9 @@ body{
     text-decoration: none;
     background: var(--color-light);
 }
-
+html{
+    scroll-behavior: smooth ;
+}
 :root{
     --color-light: #EFE6DD ;
     --color-dark: #231F20;
@@ -225,7 +227,8 @@ header button{
 
 
 .gallery{
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(3, 3fr);
     flex-direction: row;
     padding: 0 20px;
     
@@ -334,8 +337,10 @@ footer h5{
     color: #33FF05;
     font-size: 32px;
 }
-footer ul{
-    text-decoration: none;
+footer .div ul li{
+    list-style: none;
+    line-height: 25px;
+    font-size: 15px;
 }
 
 footer img{
@@ -343,6 +348,40 @@ footer img{
     border-radius: 50%;
 }
 
+
+footer .div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .div span{
+    color: #33FF05;
+    font-weight: 600;
+    font-size: 22px;
+    display: block;
+}
+
+footer .div input{
+    height: 42px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 5px auto;
+    
+}
+
+footer .div  button{
+    background-color: #33FF05;
+    padding: 20px 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+    margin: 10px 20px;
+    width: 100%;
+
+}
 
 .allright{
     display: block;
